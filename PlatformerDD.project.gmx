@@ -4,7 +4,13 @@
     <Config>Configs\Default</Config>
   </Configs>
   <NewExtensions/>
-  <sounds name="sound"/>
+  <sounds name="sound">
+    <sound>sound\sn_shot</sound>
+    <sound>sound\sn_eshot</sound>
+    <sound>sound\sn_edie</sound>
+    <sound>sound\sn_die</sound>
+    <sound>sound\sn_theme</sound>
+  </sounds>
   <sprites name="sprites">
     <sprite>sprites\sp_character</sprite>
     <sprite>sprites\sp_enemy</sprite>
@@ -14,13 +20,21 @@
     <sprite>sprites\sp_bullet</sprite>
     <sprite>sprites\sp_medipack</sprite>
     <sprite>sprites\sp_door</sprite>
+    <sprite>sprites\sp_button</sprite>
   </sprites>
-  <backgrounds name="background"/>
+  <backgrounds name="background">
+    <background>background\b_ground</background>
+    <background>background\b_farground</background>
+    <background>background\b_couds</background>
+    <background>background\b_sky</background>
+    <background>background\b_undergournd</background>
+  </backgrounds>
   <paths name="paths">
     <path>paths\p_enemy1</path>
   </paths>
   <fonts name="fonts">
     <font>fonts\f_title</font>
+    <font>fonts\fn_caption</font>
   </fonts>
   <objects name="objects">
     <object>objects\obj_wall</object>
@@ -35,8 +49,14 @@
     <object>objects\obj_medipack</object>
     <object>objects\obj_exitlevel</object>
     <object>objects\obj_boss</object>
+    <objects name="interface">
+      <object>objects\i_button</object>
+      <object>objects\i_play</object>
+      <object>objects\i_exit</object>
+    </objects>
   </objects>
   <rooms name="rooms">
+    <room>rooms\rm_menu</room>
     <room>rooms\rm_level1</room>
     <room>rooms\rm_level2</room>
     <room>rooms\rm_win</room>
